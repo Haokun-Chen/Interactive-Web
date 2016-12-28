@@ -1,0 +1,16 @@
+.panel-title{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.panel-body{
+    font-size: 16px;
+}
+
+.panel-group{
+    font-family:Helvetica,Arial,Sans-serif
+}
+
+.panel-default>.panel-heading{
+    background-color: #dad895;
+}

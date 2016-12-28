@@ -1,0 +1,65 @@
+body{
+    background-color: black;
+    color:white;
+}
+
+.container{
+    width: 80%;
+    margin:0 auto;
+}
+
+.header h1{
+    text-align: center;
+}
+
+.column{
+    float: left;
+    width: 50%;
+}
+
+.info img{
+    width: 10%;
+}
+
+.header{
+    margin-top: 80px;
+}
+
+.nav{
+    width: 100%;
+    position: fixed;
+    top:0;
+    height: 50px;
+    background-color: white;
+}
+
+.nav h2{
+    color: black;
+    margin:10px;
+    padding-left: 20px;
+}
+
+.nav *{
+    display: inline-block;
+}
+
+.nav ul{
+    float:right;
+}
+
+.nav ul li{
+    margin:10px;
+    margin-top: 5px;
+}
+
+.nav ul li a{
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.FAQ{
+    margin-top: 50px;
+}
+
+
+

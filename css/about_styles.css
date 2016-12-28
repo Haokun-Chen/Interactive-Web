@@ -1,0 +1,202 @@
+*{
+    /*border: 1px solid red;*/
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fffeea;
+    color:#34495e;
+}
+
+.skills{
+    background-color: #5AD4C2;
+    color:#FFF;
+    padding-bottom: 30px;
+    padding-top:10px;
+}
+
+#skill-list{
+    margin-left: 50px;
+}
+
+.container{
+    width:80%;
+    margin: 0 auto;
+    padding-top:20px;
+}
+
+.header h1{
+    text-align: center;
+}
+
+.header{
+    margin-top:40px;
+    margin-bottom: 20px;
+}
+
+.image {
+    display: inline-block;
+    float: left;
+}
+
+.column{
+    display: inline-block;
+    float: left;
+    width:30%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.main_text{
+    clear: both;
+    padding-top: 40px;
+    padding-left:20px;
+}
+.photo{
+    max-width: 100%;
+}
+
+.project{
+    padding-left: 20px;
+}
+
+/*Navigation*/
+.nav{
+    background-color: black;
+    position: fixed;    /*Fix at the top*/
+    width:100%;         /*Extend*/
+    top:0;
+    height: 50px;
+}
+
+.nav a{
+    -webkit-transition: color 600ms;
+    /*transition
+    animation*/
+}
+
+.nav a:hover{
+    color: #ff0;
+    text-decoration: none; /*delete underline*/
+}
+
+.nav h2{
+    display: inline-block;   /*Not occupy whole row*/
+    color: white;
+    padding-left: 20px;
+    margin:10px;
+}
+
+.nav ul{
+    float: right;        /*align to the right*/
+}
+
+.nav ul li{
+    display: inline-block; /*Not occupy whole row*/
+    margin:10px;
+    margin-top: 5px;
+}
+
+.nav ul li a{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+
+/*Navigation End*/
+
+/*Typography*/
+h1,
+h2,
+h3{
+    font-family:Futura, Helvetica, Arial, sans-serif;
+}
+
+.intro p{
+    font-family:Futura, Helvetica, Arial, sans-serif;
+    font-size:2em;
+    font-weight: 100;
+    -webkit-margin-before:0;
+}
+
+.skills h3{
+    text-align: center;
+    text-transform: uppercase;
+}
+/*Typography End*/
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+    #skill-list{
+        margin:auto;
+    }
+
+    .column{
+        width:50%;
+    }
+
+    .skills{
+        width: 100%;
+        margin-left:20px;
+        padding-left: 0px;
+    }
+
+     .intro p{
+        font-size: 25px;
+        margin:auto;
+        padding-top:30%;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    .column{
+        width:50%;
+    }
+
+    .intro p{
+        font-size: 20px;
+        margin:auto;
+        padding-top:30%;
+    }
+
+    .skills{
+        width: 100%;
+        margin-left:20px;
+        padding-left: 0px;
+    }
+
+    .nav ul li a{
+        font-size: 13px;
+    }
+
+    .nav ul{
+        padding-left:10px;
+    }
+
+    .nav h2{
+        font-size: 20px;
+    }
+}
+    /* Landscape phones and down */
+@media (max-width: 480px) {
+
+    .nav h2{
+        font-size: 16px;
+        margin-top:15px;
+    }
+    .nav ul li a{
+        font-size: 13px;
+    }
+
+    .intro p{
+        font-size: 15px;
+    }
+
+}
+
+
+
+
