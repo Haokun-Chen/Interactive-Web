@@ -1,2 +1,2 @@
-CareerFoundry Fuul Stack Developer Projects
+CareerFoundry Full Stack Developer Projects
 Responsive Web Project
