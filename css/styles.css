@@ -315,6 +315,13 @@ body {
 .navbar{
     margin-bottom: 0px;
 }
+.dropdown-menu{
+    background-color: #222;
+}
+
+.dropdown-menu li a{
+    color:white;
+}
 
 #contact{
      background-image: url("../img/contact.jpg");
