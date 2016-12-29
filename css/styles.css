@@ -3,16 +3,39 @@
     background-size: cover;
 }
 
+/*.projectName{
+  padding-top:15px;
+  padding-bottom: 15px;
+  margin-left:10px;
+}*/
+
+.projectName a{
+       color:white;
+       text-decoration: none;
+       font-size:16px;
+       font-family: Georgia, serif;
+       font-weight:bold;
+       text-transform: uppercase;
+}
+
+.nav li a{
+   font-size: 15px;
+}
+
 .jumbotron p{
     color: white;
 }
 
-#carousel-example-generic{
-    padding-top: 50px;
+.profile{
+    padding-left:0px;
 }
 
 .carousel-caption{
     padding-bottom: 5px;
+}
+
+.about h3{
+    margin-top: 0px;
 }
 
 .item h2{
@@ -45,12 +68,6 @@ li{
     font-family:Georgia, serif;
 }
 
-
-.contact h3{
-    text-align: center;
-    color: black;
-}
-
 /*Contact Page*/
 body{
     background-color: black;
@@ -58,9 +75,12 @@ body{
 }
 
 .container{
-    width: 80%;
+    width: 90%;
     margin:0 auto;
+    margin-bottom: 10px;
+    padding-top: 40px;
 }
+
 
 .header h1{
     /*text-align: center;*/
@@ -81,22 +101,22 @@ body{
     margin-top: 80px;
 }
 
-.nav{
+/*.nav{
     width: 100%;
     position: fixed;
     top:0;
     height: 50px;
     background-color: white;
     z-index: 1;
-}
+}*/
 
-.nav h2{
+/*.nav h2{
     color: black;
     margin:10px;
     padding-left: 20px;
-}
+}*/
 
-.nav *{
+/*.nav *{
     display: inline-block;
 }
 
@@ -113,12 +133,21 @@ body{
     text-transform: uppercase;
     letter-spacing: 0.05em;
     font-size: 16px;
+}*/
+
+.icon{
+    width: 50px;
+}
+
+.contact{
+    padding-left:0px;
 }
 
 /*Glyphicon transition*/
 .column span:hover{
  color: red;
 }
+
 
 .column span{
     -webkit-transition: color 300ms;
@@ -172,6 +201,14 @@ body{
         font-size: 25px;
     }
 
+    .profile{
+        margin-bottom: 30px;
+    }
+
+    .about{
+        padding-bottom: 50px;
+    }
+
 
 }
 
@@ -218,15 +255,27 @@ body{
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-    .col-xs-6{
-        width: 100%;
-    }
-
      .carousel-caption{
         display: none
     }
 
-     .nav h2{
+    .profile{
+        width:50%;
+    }
+
+    .about{
+        width:50%;
+    }
+
+    .about h3{
+        font-size: 20px;
+    }
+
+    .col-xs-6{
+        padding:0px;
+    }
+
+   /*  .nav h2{
         font-size:20px;
     }
 
@@ -236,7 +285,7 @@ body{
 
     .nav ul li a{
         font-size: 12px;
-    }
+    }*/
 
     .column h2{
         font-size: 22px;
@@ -244,5 +293,27 @@ body{
 
 }
 
+.panel-body{
+    color: white;
+}
 
+.panel-default>.panel-heading{
+    background-color: #d0bf6e;
+}
+
+.panel-default{
+    border-color: black;
+}
+
+.panel-collapse{
+    background-color:black;
+}
+
+body {
+  position: relative;
+}
+
+.navbar{
+    margin-bottom: 0px;
+}
 
