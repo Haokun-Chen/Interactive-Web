@@ -343,3 +343,12 @@ body {
 #FAQ{
     padding-top: 0px;
 }
+
+footer{
+    width: 90%;
+    margin:auto;
+}
+
+.copyright{
+    float:right;
+}
