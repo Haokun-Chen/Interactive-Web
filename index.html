@@ -145,19 +145,22 @@
         <div class="col-md-4 col-xs-12">
           <h2>Portfolio Concept</h2>
           <p>As a CS and business major student, I want to leverage my skills from both sides.
-          Hope to build a portfolio that shows my design and programming abilities. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          Hope to build a portfolio that shows my design and programming abilities.
+          <a href="#" title="More information" id="tooltip1">Tooltips</a>
+          </p>
+
+          <p><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">View details &raquo;</button></p>
         </div><!-- /col -->
         <div class="col-md-4 col-xs-12">
           <h2>Portfolio Goals</h2>
           <p>Complete five exercises every week and finish the course in six months </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">View details &raquo;</button></p>
        </div><!-- /col -->
         <div class="col-md-4 col-xs-12">
           <h2>Course Goals</h2>
           <p>Able to work as a freelancer and produce industry level web application. Has a
           better understanding of both front-end and back-end development</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">View details &raquo;</button></p>
         </div><!-- /col -->
       </div><!-- /row -->
 
@@ -326,7 +329,6 @@
     // $('#work').stellar();
     $.stellar({
     horizontalScrolling:true});
-
   </script>
   <script type="text/javascript">
   var $root = $('html, body');
@@ -338,6 +340,15 @@
             window.location.hash = href;
         });
         return false;
+    });
+  </script>
+
+  <script>
+    $(function () {
+    $('#tooltip1').tooltip();
+    });
+    $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
     });
   </script>
 

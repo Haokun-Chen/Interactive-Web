@@ -147,12 +147,12 @@ body{
 }
 
 /*Glyphicon transition*/
-.column span:hover{
+#contact span:hover{
  color: red;
 }
 
 
-.column span{
+#contact span{
     -webkit-transition: color 300ms;
 }
 
