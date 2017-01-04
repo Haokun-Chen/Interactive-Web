@@ -9,6 +9,10 @@
   margin-left:10px;
 }*/
 
+#work{
+    background-image: url("../img/heroimage.jpg");
+}
+
 .projectName a{
        color:white;
        text-decoration: none;
@@ -192,6 +196,33 @@ body{
     height: 700px;
 
 }
+
+.learn-more {
+  text-align: left;
+  float: left;
+}
+
+.modal-button {
+  float: right;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.modal{
+    color:black;
+}
+
+#modalembed {
+    height: 500px;
+    width: 100%;
+    padding: 10px;
+}
+
+.modal-title{
+    font-size: 22px;
+}
+
 
 
 @media (min-width: 768px) and (max-width: 979px) {
