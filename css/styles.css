@@ -1,19 +1,28 @@
-.jumbotron{
-    background-image: url("../img/background.jpg");
-    background-size: cover;
+h1,h2,h3{
+    font-family:Futura, Helvetica, Arial, sans-serif;
 }
 
-/*.projectName{
-  padding-top:15px;
-  padding-bottom: 15px;
-  margin-left:10px;
-}*/
-
-#work{
-    background-image: url("../img/heroimage.jpg");
+p,li{
+    font-family:Georgia, serif;
 }
 
-.projectName a{
+body{
+    background-color: black;
+    color:white;
+}
+
+.container{
+    width: 90%;
+    /*margin:0 auto;*/
+    padding-top:40px;
+}
+
+/*Navigation Bar*/
+.navbar-nav{
+   font-size: 15px;
+}
+
+.navbar-brand a{
        color:white;
        text-decoration: none;
        font-size:16px;
@@ -22,24 +31,23 @@
        text-transform: uppercase;
 }
 
-.nav li a{
-   font-size: 15px;
+.dropdown-menu{
+    background-color: #222;
 }
 
-.jumbotron p{
-    color: white;
+.dropdown-menu li a{
+    color:white;
 }
 
-.profile{
-    padding-left:0px;
-}
+/*Carousel*/
 
 .carousel-caption{
     padding-bottom: 5px;
 }
 
-.about h3{
-    margin-top: 0px;
+.carousel{
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
 .item h2{
@@ -55,113 +63,22 @@
     margin-top: 0px;
 }
 
-.carousel{
-    margin-left: -15px;
-    margin-right: -15px;
+
+/*Portfolio explannation*/
+#goals h2{
+    text-align: center;
 }
 
-
-h1,
-h2,
-h3{
-    font-family:Futura, Helvetica, Arial, sans-serif;
+/*Work Section*/
+.work_heading{
+    text-align: center;
 }
 
-p,
-li{
-    font-family:Georgia, serif;
-}
-
-/*Contact Page*/
-body{
-    background-color: black;
-    color:white;
-}
-
-.container{
-    width: 90%;
-    margin:0 auto;
-    padding-top:40px;
-}
-
-
-.header h1{
-    /*text-align: center;*/
-    font-size:8em;
-}
-
-.column{
-    float: left;
-    width: 50%;
-    height: 200px;
-}
-
-.info img{
-    width: 10%;
-}
-
-.header{
-    margin-top: 80px;
-}
-
-/*.nav{
-    width: 100%;
-    position: fixed;
-    top:0;
-    height: 50px;
-    background-color: white;
-    z-index: 1;
-}*/
-
-/*.nav h2{
-    color: black;
-    margin:10px;
-    padding-left: 20px;
-}*/
-
-/*.nav *{
-    display: inline-block;
-}
-
-.nav ul{
-    float:right;
-}
-
-.nav ul li{
-    margin:10px;
-    padding-top: 5px;
-}
-
-.nav ul li a{
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font-size: 16px;
-}*/
-
-.icon{
-    width: 50px;
-}
-
-.contact{
-    padding-left:0px;
-}
-
-/*Glyphicon transition*/
-#contact span:hover{
- color: red;
-}
-
-
-#contact span{
-    -webkit-transition: color 300ms;
-}
-
-.FAQ h2 a{
-    color: white;
-}
-
-.col-md-4 p{
-    color: white;
+#work{
+    background-image: url("../img/heroimage.jpg");
+    background-size: cover;
+    width:100%;
+    margin-top: 50px;
 }
 
 #work img{
@@ -170,31 +87,86 @@ body{
 
 }
 
-.example h2{
-    text-align: center;
+/*About Section*/
+.about h3{
+    margin-top: 0px;
 }
 
-.example{
-    margin:auto;
+.profile{
+    padding-left:0px;
 }
 
-.work_heading{
-    text-align: center;
+.skill h3{
+    margin-top:0px;
+}
+
+
+/*Contact Section*/
+.contact{
+    padding-left:0px;
 }
 
 #contact{
+    margin: 50px 0px;
+    width:100%;
     background-image: url("../img/contact.jpg");
      /*Add a background image*/
     background-attachment: fixed;
    /*Give the background a fixed position does it not scroll when you scroll*/
     background-size: cover;
 /*Have the background cover the entire div section*/
-    color: white;
-/*Change the color of the text on top so it is readable, and adjust the padding as needed.*/
-    padding:50px;
-    padding-top: 50px;
     height: 700px;
+/*Change the color of the text on top so it is readable, and adjust the padding as needed.*/
+    padding: 5% 10%;
+}
 
+.icon{
+    width: 50px;
+}
+
+/*Glyphicon transition*/
+#contact span:hover{
+ color: red;
+}
+
+#contact span{
+    -webkit-transition: color 300ms;
+}
+
+/*Contact form*/
+.form-group{
+    margin-top:20px;
+}
+.form-control{
+    margin-bottom:20px;
+}
+/*end of contact section*/
+
+
+/*FAQ Section*/
+#FAQ{
+    padding-top: 0px;
+}
+
+.FAQ h2 a{
+    color: white;
+}
+
+/*FAQ Panel*/
+.panel-body{
+    color: white;
+}
+
+.panel-default>.panel-heading{
+    background-color: #d0bf6e;
+}
+
+.panel-default{
+    border-color: black;
+}
+
+.panel-collapse{
+    background-color:black;
 }
 
 .learn-more {
@@ -202,6 +174,7 @@ body{
   float: left;
 }
 
+/*FAQ Modal*/
 .modal-button {
   float: right;
   padding: 10px;
@@ -223,16 +196,32 @@ body{
     font-size: 22px;
 }
 
+/*end of FAQ section*/
 
+/*Footer Section*/
+footer{
+    width: 90%;
+    margin:auto;
+}
 
+.copyright{
+    float:right;
+}
+
+/*Labtop Screen*/
 @media (min-width: 768px) and (max-width: 979px) {
     #contact{
         height: 800px;
     }
 
+    #contact{
+        padding-top: 20px;
+    }
+
     .carousel-caption{
         display: none;
     }
+
     .col-xs-12{
         margin:auto;
     }
@@ -244,10 +233,6 @@ body{
 
     .header h1{
         font-size: 6em;
-    }
-
-    .column h2{
-        font-size: 25px;
     }
 
     .profile{
@@ -292,18 +277,6 @@ body{
      .header h1{
         font-size: 5em;
     }
-
-
-    .column h2{
-        font-size: 25px;
-    }
-
-    .column{
-       height: 150px;
-       width:100%;
-    }
-
-
 }
 
 /* Landscape phones and down */
@@ -332,72 +305,4 @@ body{
         padding:0px;
     }
 
-   /*  .nav h2{
-        font-size:20px;
-    }
-
-    .nav ul{
-        padding-left: 10px;
-    }
-
-    .nav ul li a{
-        font-size: 12px;
-    }*/
-
-    .column h2{
-        font-size: 22px;
-    }
-
-}
-
-.panel-body{
-    color: white;
-}
-
-.panel-default>.panel-heading{
-    background-color: #d0bf6e;
-}
-
-.panel-default{
-    border-color: black;
-}
-
-.panel-collapse{
-    background-color:black;
-}
-
-body {
-  position: relative;
-}
-
-.navbar{
-    margin-bottom: 0px;
-}
-.dropdown-menu{
-    background-color: #222;
-}
-
-.dropdown-menu li a{
-    color:white;
-}
-#about{
-
-}
-#FAQ{
-    padding-top: 0px;
-}
-
-footer{
-    width: 90%;
-    margin:auto;
-}
-
-.copyright{
-    float:right;
-}
-.form-group{
-    margin-top:20px;
-}
-.form-control{
-    margin-bottom:20px;
 }
