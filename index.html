@@ -14,8 +14,6 @@
     <!-- Custom styles for this template go here -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 
     <!--[if lt IE 9]>
@@ -27,16 +25,6 @@
 <!-- Body starts here -->
   <body data-spy="scroll" data-target=".navbar">
     <div id="fb-root"></div>
-    <!-- twitter plug-in -->
-       <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-        fjs.parentNode.insertBefore(js, fjs);
-         }(document, 'script', 'facebook-jssdk'));
-      </script>
-
     <!--navbar starts here-->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container-fluid">
@@ -128,7 +116,7 @@
           <h2>Portfolio Concept</h2>
           <p>As a CS and business major student, I want to leverage my skills from both sides.
           Hope to build a portfolio that shows my design and programming abilities.
-          <a href="#" title="More information" id="tooltip1">Tooltips</a>
+          <a data-toggle="tooltip" href="#" title="More information" id="tooltip1">Tooltips</a>
           </p>
           <p><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">View details &raquo;</button></p>
         </div><!-- /col -->
@@ -219,6 +207,7 @@
             <input id = "email" name = "email" placeholder = "Enter your email" type ="email" class="form-control" required="required">
             <label for = "Message">Your message below</label>
             <textarea id = "message" name = "message" placeholder = "Your message" class = "form-control message-box" style="resize: none" cols="40" rows="5" minlength="20"></textarea>
+            <p class="visible-comment"></p>
             <button type="submit" class="btn btn-default">Submit</button>
           </div>
         </form>
@@ -299,7 +288,12 @@
 </div>
 </div>
 
-
+<footer>
+  <div class = "divider"><hr></div>
+  <div class="copyright">&copy; Haokun Chen, 2017 </div>
+    <a href="https://twitter.com/haokun_chen" class="twitter-follow-button" data-show-screen-name="false" data-show-count="false">Follow @haokun_chen</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <div class="fb-like" data-href="http://portfolio-haokun-chen.bitballoon.com/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+</footer>
 
   <!-- ============================= -->
   <!-- All your JavaScript comes now -->
@@ -309,40 +303,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <!-- Can place script tags with JavaScript files here -->
   <script src="js/jquery.stellar.min.js"></script>
-  <script type="text/javascript">
-    $('#work').stellar();
-    // $('#work').stellar();
-    $.stellar({
-    horizontalScrolling:true});
-  </script>
-  <script type="text/javascript">
-  var $root = $('html, body');
-    $('.navbar-nav a').click(function() {
-        var href = $.attr(this, 'href');
-        $root.animate({
-            scrollTop: $(href).offset().top
-        }, 500, function () {
-            window.location.hash = href;
-        });
-        return false;
-    });
-  </script>
 
-  <script>
-    $(function () {
-    $('#tooltip1').tooltip();
-    });
-    $(function () {
-    $('[data-toggle="tooltip"]').tooltip();
-    });
-  </script>
-
-  <footer>
-  <div class = "divider"><hr></div>
-  <div class="copyright">&copy; Haokun Chen, 2017 </div>
-    <a href="https://twitter.com/haokun_chen" class="twitter-follow-button" data-show-screen-name="false" data-show-count="false">Follow @haokun_chen</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <div class="fb-like" data-href="http://portfolio-haokun-chen.bitballoon.com/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
-  </footer>
-
+  <!-- Can place script tags with JavaScript files here -->
+  <script src="js/scripts.js"></script>
   </body>
 </html>
