@@ -45,13 +45,27 @@ $(function () {
   });
 
 // button clicked function
-$('button').on('click',function(){
+$('.submit').on('click',function(){
     var comment = $('.message-box').val();
     // get the string from textarea
     console.log(comment);
     $('.visible-comment').html(comment);
     $('.message-box').hide();
     return false;
+});
+
+//keyup
+$('.message-box').on('keyup',function(){
+    console.log("keyup happened");
+    var charCount = 0;
+    charCount = $('.message-box').val().length;
+    $('.char-count').html(charCount);
+    //Change background-color
+    if(charCount > 30){
+        $('.b-char-count').css("background-color","red");
+    }else{
+        $('.b-char-count').css("background-color","black");
+    }
 });
 
 
