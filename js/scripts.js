@@ -31,6 +31,16 @@ $(document).ready(function(){
         return false;
     });
 
+    $('.col-md-3 a').click(function() {
+        var href = $.attr(this, 'href');
+        $root.animate({
+            scrollTop: $(href).offset().top
+        }, 500, function () {
+            window.location.hash = href;
+        });
+        return false;
+    });
+
     //Change color
     alert("Use JS to chagne background-color in message-box!");
     $('.message-box').css("background-color","red");
