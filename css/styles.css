@@ -84,7 +84,10 @@ body{
 #work img{
     margin: auto;
     padding:20px;
+}
 
+#work-img{
+    padding-bottom:30px;
 }
 
 /*About Section*/
