@@ -78,4 +78,21 @@ $('.message-box').on('keyup',function(){
     }
 });
 
+//Google Map API
+function initMap() {
+  var location =  {lat: 35.9190972, lng:-79.0638853};
+  var map;
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: location,
+    zoom: 14
+    });
+  var marker = new google.maps.Marker({
+          position: location,
+          map: map
+        });
+};
+
+
+
+
 

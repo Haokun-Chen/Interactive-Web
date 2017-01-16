@@ -11,6 +11,15 @@ body{
     color:white;
 }
 
+#map {
+        width: 100%;
+        height:300px;
+}
+
+
+
+
+
 .container{
     width: 90%;
     /*margin:0 auto;*/
@@ -141,7 +150,7 @@ body{
    /*Give the background a fixed position does it not scroll when you scroll*/
     background-size: cover;
 /*Have the background cover the entire div section*/
-    height: 700px;
+    height: 750px;
 /*Change the color of the text on top so it is readable, and adjust the padding as needed.*/
     padding: 5% 10%;
 }
@@ -157,6 +166,11 @@ body{
 
 #contact span{
     -webkit-transition: color 300ms;
+}
+
+.map-block{
+    padding-left: 0px;
+    padding-top:30px;
 }
 
 /*Contact form*/
